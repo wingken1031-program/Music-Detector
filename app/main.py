@@ -37,12 +37,12 @@ def main() -> None:
     game = load_game()
 
     uploaded = st.file_uploader(
-        "Upload a piano chord recording (WAV/MP3/OGG) or MIDI file",
+        "Upload a song recording (WAV/MP3/OGG) or MIDI file",
         type=["wav", "mp3", "ogg", "midi", "mid"],
     )
 
     audio_input = st.audio_input(
-        "Record a piano chord",
+        "Record a song snippet",
         help="To change the microphone, click the camera/lock icon in your browser's address bar.",
     )
 

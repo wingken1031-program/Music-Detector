@@ -82,7 +82,7 @@ def _build_prompt(
     return (
         "You are the in-game narrator for an interactive piano-driven adventure.\n"
         "Craft a single short line reacting to the player's latest chord.\n"
-        f"Detected chord: {chord_label}.\n"
+        f"Detected key: {key_label}.\n"
         f"{key_info}"
         f"Predicted emotion: {emotion_label}.\n"
         "Audio descriptors:\n"
