@@ -80,8 +80,8 @@ def _build_prompt(
     key_info = f"Detected key: {key_label}.\n" if key_label else ""
 
     return (
-        "You are the in-game narrator for an interactive piano-driven adventure.\n"
-        "Craft a single short line reacting to the player's latest chord.\n"
+        "You are the in-game for an interactive music-driven emotion responder, analyses all chord progressions and given the response of the whole song.\n"
+        "Craft a reacting to the player's latest key.\n"
         f"Detected key: {key_label}.\n"
         f"{key_info}"
         f"Predicted emotion: {emotion_label}.\n"
@@ -89,5 +89,5 @@ def _build_prompt(
         f"{descriptor_block}\n"
         "Previous dialogue (most recent last):\n"
         f"{context_block}\n"
-        "Respond with empathetic, emotionally supportive words, as if from a deeply attentive partner. (max 2 sentences)."
+        "Respond with empathetic, emotionally supportive words, as if from a deeply attentive partner. (min 2 sentences)."
     )

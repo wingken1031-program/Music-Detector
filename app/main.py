@@ -32,7 +32,7 @@ def load_game() -> MusicEmotionGame:
 def main() -> None:
     st.set_page_config(page_title=APP_TITLE, layout="wide")
     st.title(APP_TITLE)
-    st.caption("Play a chord, feel the emotion, hear the story.")
+    st.caption("Play music, feel the emotion, hear the response.")
 
     game = load_game()
 
@@ -50,7 +50,7 @@ def main() -> None:
     with col1:
         st.header("Latest Response")
         placeholder = st.empty()
-    with col2:
+    with col2: 
         st.header("Chord & Emotion")
         chord_placeholder = st.empty()
         key_placeholder = st.empty()
